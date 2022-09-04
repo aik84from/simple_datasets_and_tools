@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  postgres:
+    image: "postgres:14.4"
+    environment:
+      POSTGRES_DB: "example"
+      POSTGRES_USER: "example"
+      POSTGRES_PASSWORD: "example"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    ports:
+      - "5432:5432"
+
